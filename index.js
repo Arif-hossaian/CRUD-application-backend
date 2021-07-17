@@ -10,7 +10,7 @@ const app = express();
 app.use(express.json());
 // app.use(bodyParser.json({extended: true }));
 // app.use(bodyParser.urlencoded({ extended: true }))
-app.use(cors());
+app.use(cors("http://localhost:3000/"));
 
 app.use("/user", Routes);
 
